@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/baseline_home_24"
+            android:title="@string/ana_sayfa" />
+        <item
+            android:id="@+id/nav_favourites"
+            android:icon="@android:drawable/btn_star"
+            android:title="@string/favoriler"/>
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@android:drawable/ic_menu_preferences"
+            android:title="@string/ayarlar" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@android:drawable/ic_lock_power_off"
+            android:menuCategory="system"
+            android:title="@string/k_yap" >
+        </item>
+</menu>

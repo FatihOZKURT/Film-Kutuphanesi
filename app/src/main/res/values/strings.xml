@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Film Kütüphanesi</string>
+    <string name="be_enilen_filmler">Beğenilen Filmler</string>
+    <string name="film_k_t_phanesi">Film Kütüphanesi</string>
+    <string name="navigation_drawer_open">Navigasyon barı aç</string>
+    <string name="navigation_drawer_close">Navigasyon barı kapat</string>
+    <string name="hen_z_ye_de_il_misin_kay_t_ol">Henüz üye değil misin? Kayıt Ol</string>
+    <string name="kullan_c_ad">Kullanıcı Adı</string>
+    <string name="sifre">Şifre</string>
+    <string name="kay_t_ol">Kayıt Ol</string>
+    <string name="zaten_ye_misin_giri_yap">Zaten üye misin? Giriş Yap</string>
+    <string name="giris_yap">Giriş Yap</string>
+    <string name="ifre_onay">Şifre (Tekrar)</string>
+    <string name="k_yap">Çıkış Yap</string>
+    <string name="ana_sayfa">Ana sayfa</string>
+    <string name="favoriler">Favoriler</string>
+    <string name="ayarlar">Ayarlar</string>
+    <string name="genel_bak">Genel Bakış</string>
+    <string name="kullan_c_ayarlar">Kullanıcı Ayarları</string>
+    <string name="tema">Tema</string>
+    <string name="dil_ayarlar">Dil Ayarları</string>
+    <string name="t_rler">Türler:</string>
+    <string name="oy_ortalamas">Oy Ortalaması:</string>
+    <string name="k_tarihi">Çıkış Tarihi:</string>
+    <string name="mevcut_ifre">Mevcut Şifre</string>
+    <string name="yeni_ifre_tekrar">Yeni Şifre (Tekrar)</string>
+    <string name="yeni_ifre">Yeni Şifre</string>
+    <string name="ifre_de_i_tir">Şifre Değiştir</string>
+    <string name="g_ncelle">Güncelle</string>
+    <string name="kullan_c_ad_de_i_tir">Kullanıcı Adı Değiştir</string>
+    <string name="film_ba_l">Film Başlığı</string>
+    <string name="_0">0</string>
+    <string name="dil">Dil</string>
+</resources>
