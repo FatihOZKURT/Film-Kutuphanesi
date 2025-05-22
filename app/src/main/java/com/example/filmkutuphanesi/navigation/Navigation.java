@@ -12,11 +12,11 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import android.content.SharedPreferences;
-import com.example.filmkutuphanesi.FavouritesActivity;
-import com.example.filmkutuphanesi.LoginActivity;
-import com.example.filmkutuphanesi.MainActivity;
+import com.example.filmkutuphanesi.activities.FavouritesActivity;
+import com.example.filmkutuphanesi.activities.LoginActivity;
+import com.example.filmkutuphanesi.activities.MainActivity;
 import com.example.filmkutuphanesi.R;
-import com.example.filmkutuphanesi.SettingsActivity;
+import com.example.filmkutuphanesi.activities.SettingsActivity;
 import com.google.android.material.navigation.NavigationView;
 
 

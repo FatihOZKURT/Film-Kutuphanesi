@@ -14,16 +14,16 @@
         android:theme="@style/Theme.FilmKutuphanesi"
         tools:targetApi="34">
         <activity
-            android:name=".UsersettingsActivity"
+            android:name=".activities.UsersettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".SettingsActivity"
+            android:name=".activities.SettingsActivity"
             android:exported="false" />
         <activity
-            android:name=".RegisterActivity"
+            android:name=".activities.RegisterActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashScreen"
+            android:name=".activities.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,16 +32,16 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".FavouritesActivity"
+            android:name=".activities.FavouritesActivity"
             android:exported="false" />
         <activity
-            android:name=".DetailsActivity"
+            android:name=".activities.DetailsActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".activities.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".LoginActivity"
+            android:name=".activities.LoginActivity"
             android:exported="true" />
     </application>
 </manifest>

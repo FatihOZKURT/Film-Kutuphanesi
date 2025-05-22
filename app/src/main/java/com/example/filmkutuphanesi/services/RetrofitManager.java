@@ -3,9 +3,11 @@ package com.example.filmkutuphanesi.services;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
 
+import com.example.filmkutuphanesi.util.Constants;
+
 public class RetrofitManager {
     private static Retrofit retrofit;
-    private static final String BASE_URL = "https://api.themoviedb.org/3/";
+    private static final String BASE_URL = Constants.BASE_URL;
 
     public static Retrofit getRetrofitInstance() {
         if (retrofit == null) {

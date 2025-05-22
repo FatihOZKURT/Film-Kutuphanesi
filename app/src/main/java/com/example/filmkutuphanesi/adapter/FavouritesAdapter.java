@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.filmkutuphanesi.DetailsActivity;
+import com.example.filmkutuphanesi.activities.DetailsActivity;
 import com.example.filmkutuphanesi.R;
 import com.example.filmkutuphanesi.model.FavouritesMovie;
 import com.squareup.picasso.Picasso;

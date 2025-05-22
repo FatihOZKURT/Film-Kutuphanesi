@@ -1,33 +1,24 @@
-package com.example.filmkutuphanesi;
+package com.example.filmkutuphanesi.activities;
 
 import android.annotation.SuppressLint;
 import androidx.activity.OnBackPressedCallback;
-
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
-
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-
+import com.example.filmkutuphanesi.R;
 import com.example.filmkutuphanesi.adapter.MoviesAdapter;
 import com.example.filmkutuphanesi.adapter.TrendsAdapter;
 import com.example.filmkutuphanesi.database.MovieDatabase;
@@ -38,12 +29,11 @@ import com.example.filmkutuphanesi.model.User;
 import com.example.filmkutuphanesi.navigation.Navigation;
 import com.example.filmkutuphanesi.services.RequestMovie;
 import com.example.filmkutuphanesi.services.RetrofitManager;
+import com.example.filmkutuphanesi.util.Constants;
 import com.google.android.material.navigation.NavigationView;
-
 import java.util.List;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -61,8 +51,7 @@ public class MainActivity extends AppCompatActivity {
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private int userID;
-
-    private static final String API_KEY = "e6cc416f3552217bd3cf53ad88770012";
+    private static final String API_KEY = Constants.API_KEY;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

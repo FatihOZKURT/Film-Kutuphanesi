@@ -1,4 +1,4 @@
-package com.example.filmkutuphanesi;
+package com.example.filmkutuphanesi.activities;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -14,12 +14,11 @@ import android.widget.Toast;
 import androidx.activity.EdgeToEdge;
 import androidx.activity.OnBackPressedCallback;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.GravityCompat;
-
+import com.example.filmkutuphanesi.R;
 import com.example.filmkutuphanesi.database.MovieDatabase;
 import com.example.filmkutuphanesi.database.MovieDatabaseSingleton;
 import com.example.filmkutuphanesi.model.User;
-import java.util.List;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 

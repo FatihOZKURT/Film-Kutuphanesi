@@ -1,5 +1,6 @@
 plugins {
     alias(libs.plugins.androidApplication)
+    alias(libs.plugins.kotlinAndroid)
 }
 
 android {
@@ -29,6 +30,12 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+    buildFeatures {
+        buildConfig = true
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
 }
 
 dependencies {
@@ -36,6 +43,7 @@ dependencies {
     implementation("androidx.sqlite:sqlite:2.4.0")
     implementation("androidx.sqlite:sqlite-framework:2.4.0")
     implementation ("androidx.room:room-runtime:2.6.1")
+    implementation(libs.core.ktx)
     annotationProcessor ("androidx.room:room-compiler:2.6.1")
     implementation("com.squareup.retrofit2:retrofit:2.9.0")
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")

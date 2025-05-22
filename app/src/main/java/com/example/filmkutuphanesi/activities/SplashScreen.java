@@ -1,4 +1,4 @@
-package com.example.filmkutuphanesi;
+package com.example.filmkutuphanesi.activities;
 
 
 import android.content.Intent;
@@ -9,12 +9,12 @@ import android.os.Looper;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
+import com.example.filmkutuphanesi.R;
 
 public class SplashScreen extends AppCompatActivity {
 
     boolean nightMODE;
     SharedPreferences sharedPreferences;
-    SharedPreferences.Editor editor;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

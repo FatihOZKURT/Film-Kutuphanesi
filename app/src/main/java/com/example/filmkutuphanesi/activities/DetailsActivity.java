@@ -1,40 +1,34 @@
-package com.example.filmkutuphanesi;
+package com.example.filmkutuphanesi.activities;
 
 import android.annotation.SuppressLint;
-import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import androidx.activity.EdgeToEdge;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
-
+import com.example.filmkutuphanesi.R;
 import com.example.filmkutuphanesi.database.MovieDatabase;
 import com.example.filmkutuphanesi.database.MovieDatabaseSingleton;
 import com.example.filmkutuphanesi.model.Favourites;
 import com.example.filmkutuphanesi.model.Movie;
-
 import com.example.filmkutuphanesi.model.User;
 import com.example.filmkutuphanesi.navigation.Navigation;
 import com.example.filmkutuphanesi.services.RequestMovie;
 import com.example.filmkutuphanesi.services.RetrofitManager;
+import com.example.filmkutuphanesi.util.Constants;
 import com.google.android.material.navigation.NavigationView;
 import com.squareup.picasso.Picasso;
-
 import java.text.DecimalFormat;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
@@ -43,7 +37,6 @@ import java.util.Locale;
 import java.util.StringJoiner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -61,7 +54,7 @@ public class DetailsActivity extends AppCompatActivity {
     private View toolbar,headerView;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
-    private static final String API_KEY = "e6cc416f3552217bd3cf53ad88770012";
+    private static final String API_KEY = Constants.API_KEY;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

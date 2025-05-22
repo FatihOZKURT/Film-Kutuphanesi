@@ -6,13 +6,10 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
-import com.example.filmkutuphanesi.DetailsActivity;
+import com.example.filmkutuphanesi.activities.DetailsActivity;
 import com.example.filmkutuphanesi.R;
-import com.example.filmkutuphanesi.model.SearchedMovies;
 import com.example.filmkutuphanesi.model.TrendMovies;
 import com.squareup.picasso.Picasso;
 
