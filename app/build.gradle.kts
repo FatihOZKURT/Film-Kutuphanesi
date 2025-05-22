@@ -5,7 +5,7 @@ plugins {
 
 android {
     namespace = "com.example.filmkutuphanesi"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.example.filmkutuphanesi"
@@ -29,9 +29,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    buildFeatures {
-        buildConfig = true
     }
     kotlinOptions {
         jvmTarget = "1.8"
