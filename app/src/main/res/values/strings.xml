@@ -15,7 +15,7 @@
     <string name="ana_sayfa">Ana sayfa</string>
     <string name="favoriler">Favoriler</string>
     <string name="ayarlar">Ayarlar</string>
-    <string name="genel_bak">Genel Bakış</string>
+    <string name="genel_bak">Genel Bakış:</string>
     <string name="kullan_c_ayarlar">Kullanıcı Ayarları</string>
     <string name="tema">Tema</string>
     <string name="dil_ayarlar">Dil Ayarları</string>
@@ -31,4 +31,5 @@
     <string name="film_ba_l">Film Başlığı</string>
     <string name="_0">0</string>
     <string name="dil">Dil</string>
+    <string name="favori_listenizde_film_bulunmamaktad_r">Favori listenizde film bulunmamaktadır.</string>
 </resources>

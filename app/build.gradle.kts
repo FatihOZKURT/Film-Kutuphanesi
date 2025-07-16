@@ -36,15 +36,7 @@ android {
 }
 
 dependencies {
-    implementation("com.squareup.picasso:picasso:2.71828")
-    implementation("androidx.sqlite:sqlite:2.4.0")
-    implementation("androidx.sqlite:sqlite-framework:2.4.0")
-    implementation ("androidx.room:room-runtime:2.6.1")
     implementation(libs.core.ktx)
-    annotationProcessor ("androidx.room:room-compiler:2.6.1")
-    implementation("com.squareup.retrofit2:retrofit:2.9.0")
-    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
-    implementation("de.hdodenhof:circleimageview:3.1.0")
     implementation(libs.appcompat)
     implementation(libs.material)
     implementation(libs.activity)
@@ -52,4 +44,14 @@ dependencies {
     testImplementation(libs.junit)
     androidTestImplementation(libs.ext.junit)
     androidTestImplementation(libs.espresso.core)
+
+    annotationProcessor ("androidx.room:room-compiler:2.6.1")
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    implementation("de.hdodenhof:circleimageview:3.1.0")
+    implementation("com.squareup.picasso:picasso:2.71828")
+    implementation("androidx.sqlite:sqlite:2.4.0")
+    implementation("androidx.sqlite:sqlite-framework:2.4.0")
+    implementation ("androidx.room:room-runtime:2.6.1")
+
 }

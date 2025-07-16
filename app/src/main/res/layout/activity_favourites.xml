@@ -43,9 +43,20 @@
                 android:theme="@style/CustomMenuText"
                 tools:ignore="MissingConstraints"
                 android:layout_marginTop="15dp" />
+
         </LinearLayout>
+
 
     </ScrollView>
 
-
+    <TextView
+        android:id="@+id/emptyView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/favori_listenizde_film_bulunmamaktad_r"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="@android:color/darker_gray"/>
 </androidx.drawerlayout.widget.DrawerLayout>

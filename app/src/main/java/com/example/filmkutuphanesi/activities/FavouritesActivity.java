@@ -49,6 +49,7 @@ public class FavouritesActivity extends AppCompatActivity {
     private FavouritesAdapter moviesAdapter;
     private View toolbar,headerView;
     private TextView username;
+    private TextView emptyView;
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
     private int userID;
@@ -116,7 +117,7 @@ public class FavouritesActivity extends AppCompatActivity {
         drawerLayout = findViewById(R.id.drawerLayout);
         headerView = navigationView.getHeaderView(0);
         username = headerView.findViewById(R.id.username);
-
+        emptyView = findViewById(R.id.emptyView);
     }
 
 
@@ -131,18 +132,26 @@ public class FavouritesActivity extends AppCompatActivity {
                 moviesAdapter = new FavouritesAdapter(FavouritesActivity.this, movies, userID);
 
                 handler.post(new Runnable() {
-                    @SuppressLint("NotifyDataSetChanged")
                     @Override
                     public void run() {
-                        for(Favourites f : favourites){
+                        if (favourites == null || favourites.isEmpty()) {
+                            emptyView.setVisibility(View.VISIBLE);
+                            recyclerView2.setVisibility(View.GONE);
+                        } else {
+                            emptyView.setVisibility(View.GONE);
+                            recyclerView2.setVisibility(View.VISIBLE);
+                        }
+
+                        for (Favourites f : favourites) {
                             RequestMovie requestMovie = retrofit.create(RequestMovie.class);
                             requestMovie.getMovie(f.getMovie_id(), API_KEY).enqueue(new Callback<Movie>() {
                                 @Override
                                 public void onResponse(Call<Movie> call, Response<Movie> response) {
                                     Movie movie = response.body();
-                                    assert movie != null;
-                                    movies.add(new FavouritesMovie(movie.getTitle(), movie.getId(), movie.getVoteAverage() , movie.getPosterPath()));
-                                    recyclerView2.setAdapter(moviesAdapter);
+                                    if (movie != null) {
+                                        movies.add(new FavouritesMovie(movie.getTitle(), movie.getId(), movie.getVoteAverage(), movie.getPosterPath()));
+                                        recyclerView2.setAdapter(moviesAdapter);
+                                    }
                                 }
 
                                 @Override
@@ -151,10 +160,9 @@ public class FavouritesActivity extends AppCompatActivity {
                                 }
                             });
                         }
-
-
                     }
                 });
+
             }
         });
     }
